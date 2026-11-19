@@ -1,0 +1,66 @@
+{
+  "model": "WildDeepfake FrequencyCNNV2",
+  "best_epoch": 12,
+  "best_validation_auc_checkpoint": 0.7358597315844393,
+  "validation": {
+    "accuracy": 0.6700484205672124,
+    "balanced_accuracy": 0.6702039309575174,
+    "fake_precision": 0.6963636363636364,
+    "fake_recall": 0.6675381263616558,
+    "fake_f1": 0.6816462736373748,
+    "real_specificity": 0.672869735553379,
+    "roc_auc": 0.7358597315844393,
+    "threshold": 0.5899999999999997,
+    "confusion_matrix_labels_0_real_1_fake": [
+      [
+        5496,
+        2672
+      ],
+      [
+        3052,
+        6128
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6747931442080378,
+    "balanced_accuracy": 0.6748811047867221,
+    "fake_precision": 0.6844375963020031,
+    "fake_recall": 0.6536197763390229,
+    "fake_f1": 0.6686737919614631,
+    "real_specificity": 0.6961424332344214,
+    "roc_auc": 0.7381367639892902,
+    "threshold": 0.5899999999999997,
+    "confusion_matrix_labels_0_real_1_fake": [
+      [
+        2346,
+        1024
+      ],
+      [
+        1177,
+        2221
+      ]
+    ]
+  },
+  "threshold_source": "validation; reused unchanged for test",
+  "data": {
+    "root": "D:\\newdataset\\Dataset",
+    "train_images": 165597,
+    "valid_images": 17348,
+    "test_images": 6768,
+    "train_class_counts": {
+      "fake": 80080,
+      "real": 85517
+    },
+    "valid_class_counts": {
+      "fake": 9180,
+      "real": 8168
+    },
+    "test_class_counts": {
+      "fake": 3398,
+      "real": 3370
+    }
+  },
+  "checkpoint": "D:\\newdataset\\wilddeepfake_experiment\\frequency_v2\\checkpoints\\best_frequency_v2.pth",
+  "architecture": "4 conv blocks; 256-d pooled features; binary classifier"
+}

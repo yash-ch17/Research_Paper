@@ -1,0 +1,69 @@
+{
+  "experiment": "WildDeepfake frozen-feature fusion V2",
+  "data_root": "D:\\newdataset\\Dataset",
+  "label_mapping": {
+    "real": 0,
+    "fake": 1
+  },
+  "feature_dimensions": {
+    "xception_rgb": 2048,
+    "frequency_v2": 256,
+    "concatenated": 2304
+  },
+  "method": "Precompute deterministic frozen branch features, train only fusion head",
+  "best_epoch": 20,
+  "best_validation_auc": 0.879659229972324,
+  "threshold_selected_on_validation": 0.2799999999999999,
+  "validation": {
+    "threshold": 0.2799999999999999,
+    "accuracy": 0.80199446622089,
+    "balanced_accuracy": 0.7995604292429781,
+    "fake_precision": 0.7961034944851046,
+    "fake_recall": 0.8412854030501089,
+    "fake_f1": 0.8180710767438165,
+    "real_specificity": 0.7578354554358472,
+    "roc_auc": 0.879659229972324,
+    "confusion_matrix_labels_0_real_1_fake": [
+      [
+        6190,
+        1978
+      ],
+      [
+        1457,
+        7723
+      ]
+    ]
+  },
+  "test": {
+    "threshold": 0.2799999999999999,
+    "accuracy": 0.7972813238770685,
+    "balanced_accuracy": 0.7972802992858428,
+    "fake_precision": 0.7984678845020624,
+    "fake_recall": 0.7975279576221307,
+    "fake_f1": 0.797997644287397,
+    "real_specificity": 0.797032640949555,
+    "roc_auc": 0.8851292346868378,
+    "confusion_matrix_labels_0_real_1_fake": [
+      [
+        2686,
+        684
+      ],
+      [
+        688,
+        2710
+      ]
+    ]
+  },
+  "paths": {
+    "xception_checkpoint": "D:\\newdataset\\wilddeepfake_experiment\\transfer_xception\\checkpoints\\best_model.pth",
+    "frequency_checkpoint": "D:\\newdataset\\wilddeepfake_experiment\\frequency_v2\\checkpoints\\best_frequency_v2.pth",
+    "best_fusion_checkpoint": "D:\\newdataset\\wilddeepfake_experiment\\fusion_v2\\checkpoints\\best_fusion_v2.pth",
+    "feature_cache": "D:\\newdataset\\wilddeepfake_experiment\\fusion_v2\\feature_cache"
+  },
+  "notes": [
+    "Both feature extractors remained frozen; only FusionHead was trained.",
+    "Test set was not used for checkpoint or threshold selection.",
+    "Feature caches are float16 on disk and can be reused when metadata/checkpoint paths match.",
+    "The validation split has known exact cross-split duplicates with train; validation metrics may be optimistic."
+  ]
+}

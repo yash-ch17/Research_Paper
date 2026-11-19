@@ -1,0 +1,30 @@
+{
+  "best_epoch": 4,
+  "validation_auc": 0.5954254583189208,
+  "test": {
+    "accuracy": 0.7064220183486238,
+    "balanced_accuracy": 0.6094800537875392,
+    "precision": 0.76171875,
+    "recall": 0.8478260869565217,
+    "f1": 0.8024691358024691,
+    "threshold": 0.66,
+    "confusion_matrix": [
+      [
+        36,
+        61
+      ],
+      [
+        35,
+        195
+      ]
+    ],
+    "roc_auc": 0.6014119229045272
+  },
+  "data": {
+    "face_root": "D:\\faceforensics\\ffpp_faces_final",
+    "train_videos": 1928,
+    "val_videos": 334,
+    "test_videos": 327
+  },
+  "model": "pretrained Xception frame scoring + mean temporal aggregation"
+}

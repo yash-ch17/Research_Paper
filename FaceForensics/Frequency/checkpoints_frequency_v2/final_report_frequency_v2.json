@@ -1,0 +1,79 @@
+{
+  "model": "FrequencyCNNV2 - FFT Frequency Domain",
+  "best_epoch": 8,
+  "best_validation_auc": 0.629178520625889,
+  "validation": {
+    "accuracy": 0.6283185840707964,
+    "balanced_accuracy": 0.5884601706970128,
+    "precision": 0.7328767123287672,
+    "recall": 0.7039473684210527,
+    "f1": 0.7181208053691275,
+    "roc_auc": 0.629178520625889,
+    "threshold": 0.4999999999999998,
+    "confusion_matrix": [
+      [
+        35,
+        39
+      ],
+      [
+        45,
+        107
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.5388127853881278,
+    "balanced_accuracy": 0.506542638419085,
+    "precision": 0.6304347826086957,
+    "recall": 0.635036496350365,
+    "f1": 0.6327272727272727,
+    "roc_auc": 0.5104148121773189,
+    "threshold": 0.4999999999999998,
+    "confusion_matrix": [
+      [
+        31,
+        51
+      ],
+      [
+        50,
+        87
+      ]
+    ]
+  },
+  "config": {
+    "face_root": "D:\\faceforensics\\ffpp_faces_final",
+    "image_size": 224,
+    "frames_per_video": 8,
+    "batch_size": 2,
+    "gradient_accumulation": 4,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.0005,
+    "dropout": 0.5,
+    "label_smoothing": 0.05,
+    "epochs_requested": 15,
+    "patience": 3,
+    "frequency_augmentation": true,
+    "spatial_augmentation": true,
+    "jpeg_augmentation": true,
+    "threshold_selection": "validation only"
+  },
+  "v1_baseline": {
+    "accuracy": 0.709480122324159,
+    "balanced_accuracy": 0.6504034065441506,
+    "precision": 0.7922077922077922,
+    "recall": 0.7956521739130434,
+    "f1": 0.7939262472885033,
+    "roc_auc": 0.6912595248767368,
+    "threshold": 0.41,
+    "confusion_matrix": [
+      [
+        49,
+        48
+      ],
+      [
+        47,
+        183
+      ]
+    ]
+  }
+}

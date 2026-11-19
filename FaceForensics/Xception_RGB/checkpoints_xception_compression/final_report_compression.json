@@ -1,0 +1,32 @@
+{
+  "best_epoch": 4,
+  "validation_auc": 0.6370632998962297,
+  "test": {
+    "accuracy": 0.7064220183486238,
+    "balanced_accuracy": 0.6303451367099955,
+    "precision": 0.7768595041322314,
+    "recall": 0.8173913043478261,
+    "f1": 0.7966101694915254,
+    "roc_auc": 0.6274316450022411,
+    "threshold": 0.79,
+    "confusion_matrix": [
+      [
+        43,
+        54
+      ],
+      [
+        42,
+        188
+      ]
+    ]
+  },
+  "training": {
+    "compression_probability": 0.7,
+    "jpeg_quality": [
+      30,
+      90
+    ],
+    "epochs": 5
+  },
+  "model": "pretrained Xception fine-tuned with JPEG compression + mean temporal aggregation"
+}

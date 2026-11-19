@@ -1,0 +1,32 @@
+{
+  "best_epoch": 2,
+  "validation_threshold": 0.7,
+  "validation_balanced_accuracy": 0.6005555555555555,
+  "test": {
+    "accuracy": 0.331,
+    "balanced_accuracy": 0.5572222222222222,
+    "precision": 0.9391634980988594,
+    "recall": 0.27444444444444444,
+    "f1": 0.4247635425623388,
+    "specificity": 0.84,
+    "confusion_matrix": [
+      [
+        84,
+        16
+      ],
+      [
+        653,
+        247
+      ]
+    ],
+    "threshold": 0.7,
+    "roc_auc": 0.5574333333333333
+  },
+  "training_config": {
+    "backbone": "xception",
+    "frames_per_video": 4,
+    "image_size": 224,
+    "batch_size": 4,
+    "grad_accum_steps": 2
+  }
+}

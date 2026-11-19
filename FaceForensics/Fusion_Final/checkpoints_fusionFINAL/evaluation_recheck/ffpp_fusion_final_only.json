@@ -1,0 +1,5367 @@
+{
+  "evaluation": "ffpp_fusion_final_only",
+  "checkpoint": "D:\\faceforensics\\checkpoints_fusionFINAL\\best_fusion.pth",
+  "manifest": "D:\\faceforensics\\manifests\\test.csv",
+  "aggregation": "mean of 8 frame logits, then sigmoid",
+  "metrics": {
+    "n_videos": 327,
+    "real_videos": 97,
+    "fake_videos": 230,
+    "threshold": 0.455,
+    "accuracy": 0.6513761467889908,
+    "balanced_accuracy": 0.6359255939040789,
+    "precision_fake": 0.7989690721649485,
+    "recall_fake": 0.6739130434782609,
+    "f1_fake": 0.7311320754716981,
+    "roc_auc": 0.7232182877633347,
+    "confusion_matrix_labels_0_real_1_fake": [
+      [
+        58,
+        39
+      ],
+      [
+        75,
+        155
+      ]
+    ],
+    "frame_source_counts": {
+      "final": 327
+    },
+    "probability_min": 0.014362078160047531,
+    "probability_max": 0.9607529640197754,
+    "probability_mean": 0.5046981399913036,
+    "predicted_fake_fraction": 0.5932721712538226
+  },
+  "missing_count": 673,
+  "missing_videos": [
+    {
+      "video": "FaceForensics_C23__FaceShifter__611_760.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__766_761.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__789_753.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__294_292.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__920_811.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__320_328.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__846_845.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__463_464.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_11__secret_conversation__4OJNJLOO.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__994_986.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__390_709.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__293_296.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__28_08__kitchen_still__8BC35RFU.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__545_553.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__145_299.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_13__secret_conversation__PLNVLO74.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__06_15__kitchen_still__QRCD27P8.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__414_385.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__933_925.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__703_604.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__879_963.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__930_763.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__934_918.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__632_548.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__980_992.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__18_25__walk_down_hall_angry__AUC0HY5T.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_01__outside_talking_still_laughing__02HILKYO.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__614_616.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__275_887.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__182_242.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__446_667.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__641_662.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__981_985.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__018_019.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__478_506.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_02__walk_down_hall_angry__YVGY8LOK.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__470_468.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__280_249.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_11__walk_down_hall_angry__P08VGHTA.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__526_436.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__417_496.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__743_750.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__870_001.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__513_305.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__297_270.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__827_817.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__421_423.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__394_373.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__542_520.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__377_333.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__426_287.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__original__518.mp4",
+      "label": 0,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__452_550.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__721_715.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__415_484.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__091_116.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__189_200.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__810_838.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__704_723.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__178_598.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__916_783.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__228_289.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__428_466.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__964_174.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__052_108.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__228_289.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__392_339.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__692_610.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__506_478.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__720_672.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__591_605.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__328_320.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__184_205.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__812_821.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__213_083.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__631_551.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__519_515.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__819_786.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__209_016.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__19_24__walk_down_hall_angry__W1DEM0XM.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__548_632.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__712_716.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__524_580.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__592_500.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__211_177.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__201_203.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__916_783.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__414_385.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__519_515.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__753_789.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__173_171.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__644_657.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_13__outside_talking_still_laughing__GBYWJW06.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__408_424.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__210_241.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__647_622.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__164_216.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__837_890.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__25_27__walk_down_hall_angry__1KU29EUL.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__017_803.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__543_559.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__659_749.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__079_076.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__873_872.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__576_155.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__088_060.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__511_472.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_04__kitchen_pan__XRK7FGZX.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__873_872.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__209_016.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__897_969.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__974_953.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__464_463.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__256_146.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__143_140.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__167_166.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__321_288.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__144_122.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_25__walk_down_hall_angry__I2X1XTCC.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__676_776.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__286_267.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__578_636.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__751_752.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__856_881.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__773_652.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__328_320.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__660_634.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__825_074.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__848_894.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__445_494.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__915_895.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__447_431.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__825_074.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__219_220.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__736_785.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__869_780.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__710_788.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__002_006.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_26__kitchen_still__ILLP29ZH.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__18_09__walk_down_hall_angry__3VP8836C.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__21_07__kitchen_pan__K7KXUHMU.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__572_554.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_03__kitchen_pan__JZUXXFRB.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__573_757.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__511_472.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__303_309.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__032_944.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__787_782.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__732_691.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__527_454.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__872_873.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__374_407.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__079_076.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__04_12__walking_down_street_outside_angry__96TQKDFJ.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__643_646.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__266_252.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__175_159.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__529_633.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__602_397.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_20__walk_down_hall_angry__61SVZ2J7.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__25_18__outside_talking_pan_laughing__SEGFKFJG.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__865_739.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__05_16__walking_down_street_outside_angry__OSXCUOHX.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__861_858.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__167_166.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__594_530.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__717_684.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__927_912.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__753_789.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__724_725.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__191_188.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__816_649.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__765_867.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__264_271.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__665_679.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__550_452.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__337_522.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__429_404.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__24_19__outside_talking_still_laughing__NPZW2Z9L.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__790_014.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__842_714.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__007_132.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__213_083.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__272_396.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__854_747.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__16_05__kitchen_still__053HPS1G.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__726_713.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__521_517.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__550_452.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__667_446.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__653_601.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__245_157.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__841_639.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__556_588.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__950_836.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__837_890.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__033_097.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__25_27__outside_talking_pan_laughing__GNIMW95Z.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_04__exit_phone_room__QKCCFKBT.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__432_357.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__839_864.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__350_349.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__656_666.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__395_401.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__618_629.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__232_248.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__738_804.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__280_249.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__394_373.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__102_114.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__380_358.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__702_612.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__533_450.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__063_041.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__054_071.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__885_802.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__334_318.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__639_841.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__731_741.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__504_502.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_18__kitchen_still__V5VHLCOW.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__433_498.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__529_633.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__980_992.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__063_041.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__174_964.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__253_183.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__260_331.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__386_154.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__224_197.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__754_758.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__768_793.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__010_005.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__657_644.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__724_725.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__634_660.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__418_507.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__21_07__talking_angry_couch__MKU99DVX.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_13__secret_conversation__DJ7MF331.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__304_300.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__632_548.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__619_620.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__477_487.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_18__outside_talking_still_laughing__6SB2BR0A.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__901_902.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__333_377.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__236_237.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__370_483.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__424_408.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_07__walk_down_hall_angry__6PHZRQ4H.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__191_188.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__922_898.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__920_811.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__322_315.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__709_390.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__945_044.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__207_908.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__682_669.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_20__outside_talking_still_laughing__FW94AIMJ.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_27__walk_down_hall_angry__IL675GCI.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__584_823.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__126_104.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__488_399.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__854_747.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__684_717.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__887_275.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__326_501.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__565_589.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__222_168.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__560_557.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__862_047.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__888_937.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__843_859.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_20__secret_conversation__B0X1CGG2.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__202_348.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__750_743.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__197_224.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__430_459.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__451_449.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_21__kitchen_pan__YCSEBZO4.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__226_491.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__17_05__walk_down_hall_angry__YTJYYDO9.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__024_073.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_20__hugging_happy__B014BKVO.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__284_263.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__545_553.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__377_333.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__552_851.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__608_675.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__437_360.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__706_479.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__606_567.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__531_549.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__860_905.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__986_994.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__857_909.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__503_756.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__362_354.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__815_730.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__163_031.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__895_915.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__248_232.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__975_978.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__290_240.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__534_490.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__580_524.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__11_06__outside_talking_still_laughing__C8C4FW99.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__350_349.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__727_729.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__319_352.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__012_026.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__396_272.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__514_443.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__640_638.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__387_311.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__011_805.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__983_113.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__902_901.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__537_563.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__645_688.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__755_759.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__832_762.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__016_209.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__515_519.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__516_555.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__625_650.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_06__walk_down_hall_angry__3K21NFNM.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__788_710.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__888_937.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__742_775.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__160_928.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__568_628.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__297_270.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__061_080.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__06_18__outside_talking_still_laughing__M36D0OJT.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__941_940.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__984_967.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__954_976.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__04_01__walk_down_hall_angry__GBC7ZGDP.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__397_602.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__06_07__outside_talking_pan_laughing__NMGYPBXE.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__384_932.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__595_597.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__24_19__secret_conversation__NPZW2Z9L.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__006_002.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_14__exit_phone_room__OMLZILK3.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__277_335.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__090_086.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__821_812.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__470_468.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__740_796.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_07__secret_conversation__0IYV5DQ5.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__155_576.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__710_788.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__599_585.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__057_070.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__225_151.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__513_305.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__944_032.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__871_814.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__806_781.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__005_010.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__495_512.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__867_765.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__746_571.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__060_088.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__082_103.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__782_787.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__436_526.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__203_201.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__25_09__secret_conversation__ODAQ7BZL.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__489_022.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__464_463.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__764_850.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__590_034.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__571_746.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__637_427.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__270_297.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__876_891.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_01__outside_talking_still_laughing__01YF7VQM.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__821_812.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_15__outside_talking_pan_laughing__02HILKYO.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_11__meeting_serious__9OM3VE0Y.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__984_967.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__571_746.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__015_919.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__871_814.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__572_554.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_09__walk_down_hall_angry__RAGUKRMK.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__410_411.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__635_642.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__196_310.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__097_033.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_18__exit_phone_room__0YRBHIKG.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__820_818.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_04__walk_down_hall_angry__GBC7ZGDP.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__875_979.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__665_679.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__763_930.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__475_265.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__031_163.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_21__walk_down_hall_angry__N0WM4GSV.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__122_144.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__294_292.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__516_555.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__090_086.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__462_467.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__351_346.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__327_329.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__189_200.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__805_011.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_03__talking_angry_couch__DNUJD8M2.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__913_893.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__135_880.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__880_135.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__original__577.mp4",
+      "label": 0,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__209_016.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__881_856.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__497_403.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__17_08__walking_down_indoor_hall_disgust__JZYRLJ8T.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__386_154.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__095_053.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__425_485.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__134_192.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__352_319.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__156_243.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__039_058.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__27_25__outside_talking_pan_laughing__1KU29EUL.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__240_290.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__837_890.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__341_340.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__948_965.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__882_952.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__986_994.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__560_557.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__409_382.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__368_378.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__883_013.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__800_840.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__431_447.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__049_946.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__306_278.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__11_13__talking_angry_couch__61T622EK.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__738_804.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__099_295.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__581_697.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__875_979.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__544_532.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__876_891.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__543_559.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__781_806.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__069_961.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__769_784.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__792_903.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__23_19__walk_down_hall_angry__H4SUVFTL.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__057_070.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__096_101.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__710_788.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_21__secret_conversation__ZCB5OMEW.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__873_872.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__955_078.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__817_827.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__24_19__secret_conversation__QD5K7BP2.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__671_677.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__947_951.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__649_816.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__634_660.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_06__hugging_happy__3K21NFNM.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__549_531.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_20__walk_down_hall_angry__XWMKFMF6.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__922_898.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__197_224.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_18__kitchen_pan__22UBC0BS.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_03__secret_conversation__IFSURI9X.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__553_545.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__344_020.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__05_16__walk_down_hall_angry__OSXCUOHX.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__443_514.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__879_963.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__325_492.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__340_341.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__967_984.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__073_024.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__820_818.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__746_571.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__381_376.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__481_469.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__09_07__kitchen_pan__N9CWME71.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__440_364.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__465_482.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__982_004.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__799_809.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__344_020.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__803_017.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__216_164.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__789_753.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_01__meeting_serious__JZUXXFRB.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__453_402.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__168_222.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__833_826.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__339_392.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__042_084.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__804_738.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__907_795.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__164_216.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__191_188.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__350_349.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_25__outside_talking_pan_laughing__157Z8P8P.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__931_936.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__827_817.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__308_388.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__525_509.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__786_819.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__509_525.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__261_254.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__018_019.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__680_486.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__503_756.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__529_633.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__462_467.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__354_362.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__272_396.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__714_842.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__487_477.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__756_503.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__601_653.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__391_406.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__935_733.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_27__talking_angry_couch__IE9N0ZI9.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__936_931.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__087_081.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__784_769.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__376_381.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__918_934.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__488_399.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__581_697.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__520_542.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__065_089.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__159_175.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__259_345.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__339_392.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__567_606.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__606_567.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__895_915.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__775_742.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__299_145.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__320_328.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__857_909.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__847_906.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__407_374.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_14__meeting_serious__KJ221YN0.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__154_386.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__232_248.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__560_557.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__619_620.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__284_263.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__563_537.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__969_897.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__130_139.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__321_288.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__467_462.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__457_398.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__394_373.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__446_667.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__664_668.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__291_874.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__761_766.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__242_182.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__613_685.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__767_694.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__21_15__kitchen_pan__87WSBJP3.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__953_974.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__639_841.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__978_975.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__542_520.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__292_294.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__642_635.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__227_169.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__032_944.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__397_602.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__117_217.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__474_281.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__501_326.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__801_855.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__105_180.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__279_298.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__989_993.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__976_954.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__932_384.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__733_935.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__037_072.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__420_257.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__501_326.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__562_626.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__257_420.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__931_936.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__186_170.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__799_809.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__241_210.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__22_23__outside_talking_still_laughing__10R2HRAU.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__412_274.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__819_786.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__428_466.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__498_433.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__915_895.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__014_790.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__209_016.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__225_151.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__634_660.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_13__talking_angry_couch__KMQ3AW6A.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__164_216.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__206_221.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__109_107.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__401_395.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__145_299.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__172_582.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__193_030.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__840_800.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__988_966.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__536_540.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__original__862.mp4",
+      "label": 0,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__173_171.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__195_442.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__070_057.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__233_995.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__717_684.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__661_670.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__151_225.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__614_616.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__413_372.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__858_861.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__151_225.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_15__exit_phone_room__MZWH8ATN.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_12__outside_talking_pan_laughing__0VN0A2T3.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__484_415.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_02__exit_phone_room__3IUBEKCT.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__610_692.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__185_276.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__298_279.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__944_032.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__18_03__exit_phone_room__22UBC0BS.mp4",
+      "label": 1,
+      "frames_found": 2
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__940_941.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__608_675.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__021_312.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__575_603.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__507_418.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__129_127.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__879_963.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__299_145.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__868_949.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__427_637.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__905_860.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__911_910.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__28_08__talking_angry_couch__KXO8S7OP.mp4",
+      "label": 1,
+      "frames_found": 3
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__239_218.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__139_130.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__550_452.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__179_212.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__776_676.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__122_144.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_09__walk_down_hall_angry__XXGYLT82.mp4",
+      "label": 1,
+      "frames_found": 1
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__946_049.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__460_678.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__379_158.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__245_157.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__873_872.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__834_852.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__NeuralTextures__528_510.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__078_955.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__08_17__walk_down_hall_angry__QOX5NWIJ.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceShifter__095_053.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__202_348.mp4",
+      "label": 1,
+      "frames_found": 0
+    },
+    {
+      "video": "FaceForensics_C23__FaceSwap__993_989.mp4",
+      "label": 1,
+      "frames_found": 0
+    }
+  ],
+  "predictions": [
+    {
+      "video": "FaceForensics_C23__original__510.mp4",
+      "label": 0,
+      "prob_fake": 0.36459216475486755,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__998_561.mp4",
+      "label": 1,
+      "prob_fake": 0.1045452281832695,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__821.mp4",
+      "label": 0,
+      "prob_fake": 0.6459510922431946,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__550.mp4",
+      "label": 0,
+      "prob_fake": 0.8630096912384033,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_09__walking_down_street_outside_angry__6KUOFMZW.mp4",
+      "label": 1,
+      "prob_fake": 0.7392804622650146,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_14__exit_phone_room__RNHLLKSQ.mp4",
+      "label": 1,
+      "prob_fake": 0.332619845867157,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__136_285.mp4",
+      "label": 1,
+      "prob_fake": 0.5824241042137146,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__628.mp4",
+      "label": 0,
+      "prob_fake": 0.04192985221743584,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__144.mp4",
+      "label": 0,
+      "prob_fake": 0.1601206660270691,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_20__walking_outside_cafe_disgusted__3HWOJRAM.mp4",
+      "label": 1,
+      "prob_fake": 0.6573837399482727,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__841_639.mp4",
+      "label": 1,
+      "prob_fake": 0.1776324361562729,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__897.mp4",
+      "label": 0,
+      "prob_fake": 0.6436107754707336,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__088_060.mp4",
+      "label": 1,
+      "prob_fake": 0.40489867329597473,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__407.mp4",
+      "label": 0,
+      "prob_fake": 0.044652096927165985,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__879_963.mp4",
+      "label": 1,
+      "prob_fake": 0.4768703877925873,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_13__walking_down_indoor_hall_disgust__NJEO6L5O.mp4",
+      "label": 1,
+      "prob_fake": 0.5062980651855469,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__951.mp4",
+      "label": 0,
+      "prob_fake": 0.2212640792131424,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_07__walking_and_outside_surprised__1VMZUH1W.mp4",
+      "label": 1,
+      "prob_fake": 0.6832976937294006,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__316.mp4",
+      "label": 0,
+      "prob_fake": 0.1624206155538559,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__059_050.mp4",
+      "label": 1,
+      "prob_fake": 0.20075465738773346,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_03__podium_speech_happy__Y11NT1YX.mp4",
+      "label": 1,
+      "prob_fake": 0.5376496315002441,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__600_505.mp4",
+      "label": 1,
+      "prob_fake": 0.9474994540214539,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__975.mp4",
+      "label": 0,
+      "prob_fake": 0.22008739411830902,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__483_370.mp4",
+      "label": 1,
+      "prob_fake": 0.3323044180870056,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_15__outside_talking_pan_laughing__99NHTFBM.mp4",
+      "label": 1,
+      "prob_fake": 0.9419389963150024,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__072_037.mp4",
+      "label": 1,
+      "prob_fake": 0.8327286839485168,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__377.mp4",
+      "label": 0,
+      "prob_fake": 0.5439814329147339,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__108_052.mp4",
+      "label": 1,
+      "prob_fake": 0.6736983060836792,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__600.mp4",
+      "label": 0,
+      "prob_fake": 0.45097607374191284,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__592_500.mp4",
+      "label": 1,
+      "prob_fake": 0.24823778867721558,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__824.mp4",
+      "label": 0,
+      "prob_fake": 0.5239298343658447,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__209_016.mp4",
+      "label": 1,
+      "prob_fake": 0.169799342751503,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__021_312.mp4",
+      "label": 1,
+      "prob_fake": 0.897697389125824,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_18__walking_down_street_outside_angry__21JTDDEL.mp4",
+      "label": 1,
+      "prob_fake": 0.8430262207984924,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__127_129.mp4",
+      "label": 1,
+      "prob_fake": 0.5428733825683594,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__748.mp4",
+      "label": 0,
+      "prob_fake": 0.13407278060913086,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__393_405.mp4",
+      "label": 1,
+      "prob_fake": 0.6403631567955017,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__000_003.mp4",
+      "label": 1,
+      "prob_fake": 0.5819366574287415,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__912.mp4",
+      "label": 0,
+      "prob_fake": 0.7126505374908447,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_06__outside_talking_still_laughing__3K21NFNM.mp4",
+      "label": 1,
+      "prob_fake": 0.7132803797721863,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__956_958.mp4",
+      "label": 1,
+      "prob_fake": 0.8645252585411072,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__193_030.mp4",
+      "label": 1,
+      "prob_fake": 0.5320760011672974,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__321.mp4",
+      "label": 0,
+      "prob_fake": 0.49063342809677124,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__054_071.mp4",
+      "label": 1,
+      "prob_fake": 0.75493323802948,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__245.mp4",
+      "label": 0,
+      "prob_fake": 0.7204635739326477,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__10_19__outside_talking_still_laughing__O2IKR6YM.mp4",
+      "label": 1,
+      "prob_fake": 0.725902795791626,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__001_870.mp4",
+      "label": 1,
+      "prob_fake": 0.5215038061141968,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__733.mp4",
+      "label": 0,
+      "prob_fake": 0.03229851648211479,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__372.mp4",
+      "label": 0,
+      "prob_fake": 0.014362078160047531,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__458_722.mp4",
+      "label": 1,
+      "prob_fake": 0.772351861000061,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__689_690.mp4",
+      "label": 1,
+      "prob_fake": 0.8975410461425781,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_13__outside_talking_still_laughing__CP5HFV3K.mp4",
+      "label": 1,
+      "prob_fake": 0.712419867515564,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__21_09__walking_outside_cafe_disgusted__Z8H2TRCI.mp4",
+      "label": 1,
+      "prob_fake": 0.5536906123161316,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__514.mp4",
+      "label": 0,
+      "prob_fake": 0.27556249499320984,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_06__outside_talking_still_laughing__NMGYPBXE.mp4",
+      "label": 1,
+      "prob_fake": 0.6820976138114929,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__052_108.mp4",
+      "label": 1,
+      "prob_fake": 0.212857186794281,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__24_23__kitchen_still__YR5OVD4S.mp4",
+      "label": 1,
+      "prob_fake": 0.5999267101287842,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__373_394.mp4",
+      "label": 1,
+      "prob_fake": 0.24637055397033691,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_26__outside_talking_pan_laughing__KGFLR0PH.mp4",
+      "label": 1,
+      "prob_fake": 0.9377917051315308,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_27__podium_speech_happy__2ERUWYH8.mp4",
+      "label": 1,
+      "prob_fake": 0.3494094908237457,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__064_991.mp4",
+      "label": 1,
+      "prob_fake": 0.027047522366046906,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__622_647.mp4",
+      "label": 1,
+      "prob_fake": 0.569465696811676,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__082.mp4",
+      "label": 0,
+      "prob_fake": 0.6622540950775146,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__599.mp4",
+      "label": 0,
+      "prob_fake": 0.04609629884362221,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_14__walking_down_street_outside_angry__VOX29AK0.mp4",
+      "label": 1,
+      "prob_fake": 0.6785445809364319,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__949_868.mp4",
+      "label": 1,
+      "prob_fake": 0.7162935733795166,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__471_455.mp4",
+      "label": 1,
+      "prob_fake": 0.5608083605766296,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__27_02__podium_speech_happy__XFSH3BW7.mp4",
+      "label": 1,
+      "prob_fake": 0.5635719895362854,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_02__walking_down_street_outside_angry__O4SXNLRL.mp4",
+      "label": 1,
+      "prob_fake": 0.693270206451416,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__786.mp4",
+      "label": 0,
+      "prob_fake": 0.015594777651131153,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__083_213.mp4",
+      "label": 1,
+      "prob_fake": 0.20654959976673126,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__066_062.mp4",
+      "label": 1,
+      "prob_fake": 0.45402610301971436,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__874_291.mp4",
+      "label": 1,
+      "prob_fake": 0.44998106360435486,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__399_488.mp4",
+      "label": 1,
+      "prob_fake": 0.5596728324890137,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__557_560.mp4",
+      "label": 1,
+      "prob_fake": 0.4430502951145172,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__974.mp4",
+      "label": 0,
+      "prob_fake": 0.4520898759365082,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__348.mp4",
+      "label": 0,
+      "prob_fake": 0.2705037593841553,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__934_918.mp4",
+      "label": 1,
+      "prob_fake": 0.6961953639984131,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__095_053.mp4",
+      "label": 1,
+      "prob_fake": 0.4273938536643982,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__372_413.mp4",
+      "label": 1,
+      "prob_fake": 0.27405160665512085,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__569.mp4",
+      "label": 0,
+      "prob_fake": 0.4565950334072113,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__223_586.mp4",
+      "label": 1,
+      "prob_fake": 0.23753324151039124,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_21__kitchen_still__ZCB5OMEW.mp4",
+      "label": 1,
+      "prob_fake": 0.7341885566711426,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__288_321.mp4",
+      "label": 1,
+      "prob_fake": 0.6527978181838989,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__124_085.mp4",
+      "label": 1,
+      "prob_fake": 0.33285871148109436,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__255_214.mp4",
+      "label": 1,
+      "prob_fake": 0.1735532432794571,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__556_588.mp4",
+      "label": 1,
+      "prob_fake": 0.4327276051044464,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__056_996.mp4",
+      "label": 1,
+      "prob_fake": 0.3812379240989685,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__636.mp4",
+      "label": 0,
+      "prob_fake": 0.09050820022821426,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__358_380.mp4",
+      "label": 1,
+      "prob_fake": 0.851235568523407,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_12__walking_down_street_outside_angry__OVOQACG8.mp4",
+      "label": 1,
+      "prob_fake": 0.7613379955291748,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__646_643.mp4",
+      "label": 1,
+      "prob_fake": 0.575100839138031,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__27_18__outside_talking_pan_laughing__NYHE8D0J.mp4",
+      "label": 1,
+      "prob_fake": 0.8697105646133423,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__847_906.mp4",
+      "label": 1,
+      "prob_fake": 0.5728898644447327,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__10_22__outside_talking_pan_laughing__G48B2EQ2.mp4",
+      "label": 1,
+      "prob_fake": 0.9014719128608704,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__121.mp4",
+      "label": 0,
+      "prob_fake": 0.08265513926744461,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__25_09__talking_against_wall__ODAQ7BZL.mp4",
+      "label": 1,
+      "prob_fake": 0.7878699898719788,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__078.mp4",
+      "label": 0,
+      "prob_fake": 0.06700128316879272,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__28_08__podium_speech_happy__KXO8S7OP.mp4",
+      "label": 1,
+      "prob_fake": 0.40402787923812866,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__615.mp4",
+      "label": 0,
+      "prob_fake": 0.1406848430633545,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__570.mp4",
+      "label": 0,
+      "prob_fake": 0.598917543888092,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__303_309.mp4",
+      "label": 1,
+      "prob_fake": 0.18512295186519623,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__119.mp4",
+      "label": 0,
+      "prob_fake": 0.046476561576128006,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__992_980.mp4",
+      "label": 1,
+      "prob_fake": 0.5801374912261963,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__438_434.mp4",
+      "label": 1,
+      "prob_fake": 0.7730278968811035,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__113.mp4",
+      "label": 0,
+      "prob_fake": 0.6113497614860535,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__653.mp4",
+      "label": 0,
+      "prob_fake": 0.6713255643844604,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__462_467.mp4",
+      "label": 1,
+      "prob_fake": 0.8097228407859802,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__591.mp4",
+      "label": 0,
+      "prob_fake": 0.6813601851463318,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__469_481.mp4",
+      "label": 1,
+      "prob_fake": 0.12885259091854095,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__868.mp4",
+      "label": 0,
+      "prob_fake": 0.21123388409614563,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__960.mp4",
+      "label": 0,
+      "prob_fake": 0.2438300997018814,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_09__podium_speech_happy__RAGUKRMK.mp4",
+      "label": 1,
+      "prob_fake": 0.6762101054191589,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__19_24__outside_talking_still_laughing__59PN7WZ2.mp4",
+      "label": 1,
+      "prob_fake": 0.8991637825965881,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__091.mp4",
+      "label": 0,
+      "prob_fake": 0.5204697847366333,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__432.mp4",
+      "label": 0,
+      "prob_fake": 0.0919053927063942,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__062_066.mp4",
+      "label": 1,
+      "prob_fake": 0.6419423222541809,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__114_102.mp4",
+      "label": 1,
+      "prob_fake": 0.6280032992362976,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__850_764.mp4",
+      "label": 1,
+      "prob_fake": 0.2738323211669922,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__356.mp4",
+      "label": 0,
+      "prob_fake": 0.6677564978599548,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__091_116.mp4",
+      "label": 1,
+      "prob_fake": 0.7182899713516235,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__485_425.mp4",
+      "label": 1,
+      "prob_fake": 0.5978041887283325,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_25__outside_talking_still_laughing__RSCD7KXO.mp4",
+      "label": 1,
+      "prob_fake": 0.9607529640197754,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__008_990.mp4",
+      "label": 1,
+      "prob_fake": 0.6347714066505432,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__012_026.mp4",
+      "label": 1,
+      "prob_fake": 0.3758484423160553,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__727.mp4",
+      "label": 0,
+      "prob_fake": 0.0948946624994278,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_18__outside_talking_pan_laughing__8BMQOD7S.mp4",
+      "label": 1,
+      "prob_fake": 0.945121705532074,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__720.mp4",
+      "label": 0,
+      "prob_fake": 0.12546364963054657,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_15__kitchen_still__XNJIS4S3.mp4",
+      "label": 1,
+      "prob_fake": 0.6484514474868774,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__299.mp4",
+      "label": 0,
+      "prob_fake": 0.05670752003788948,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_21__talking_against_wall__MKU99DVX.mp4",
+      "label": 1,
+      "prob_fake": 0.6089560985565186,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__460.mp4",
+      "label": 0,
+      "prob_fake": 0.03981102257966995,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__795.mp4",
+      "label": 0,
+      "prob_fake": 0.404020220041275,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__560.mp4",
+      "label": 0,
+      "prob_fake": 0.5567673444747925,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__203_201.mp4",
+      "label": 1,
+      "prob_fake": 0.683430016040802,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__802.mp4",
+      "label": 0,
+      "prob_fake": 0.44012919068336487,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__005_010.mp4",
+      "label": 1,
+      "prob_fake": 0.32201364636421204,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__385.mp4",
+      "label": 0,
+      "prob_fake": 0.11721941828727722,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__002.mp4",
+      "label": 0,
+      "prob_fake": 0.06537991762161255,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__22_23__outside_talking_still_laughing__W9MT3Q5K.mp4",
+      "label": 1,
+      "prob_fake": 0.7254818081855774,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__384_932.mp4",
+      "label": 1,
+      "prob_fake": 0.12048793584108353,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__041_063.mp4",
+      "label": 1,
+      "prob_fake": 0.4650476574897766,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__041_063.mp4",
+      "label": 1,
+      "prob_fake": 0.2741987407207489,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__762_832.mp4",
+      "label": 1,
+      "prob_fake": 0.4689329266548157,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__863_853.mp4",
+      "label": 1,
+      "prob_fake": 0.8088303208351135,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__525.mp4",
+      "label": 0,
+      "prob_fake": 0.20851248502731323,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__005_010.mp4",
+      "label": 1,
+      "prob_fake": 0.2144894301891327,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_03__walking_outside_cafe_disgusted__QH3Y0IG0.mp4",
+      "label": 1,
+      "prob_fake": 0.6585129499435425,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_25__exit_phone_room__7ZRKCFMS.mp4",
+      "label": 1,
+      "prob_fake": 0.7724486589431763,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__468.mp4",
+      "label": 0,
+      "prob_fake": 0.14474506676197052,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_07__hugging_happy__BKLOCI1M.mp4",
+      "label": 1,
+      "prob_fake": 0.4075082838535309,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__098_092.mp4",
+      "label": 1,
+      "prob_fake": 0.3121758699417114,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_21__walking_down_street_outside_angry__N0WM4GSV.mp4",
+      "label": 1,
+      "prob_fake": 0.7950550317764282,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__440_364.mp4",
+      "label": 1,
+      "prob_fake": 0.09913435578346252,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__888.mp4",
+      "label": 0,
+      "prob_fake": 0.5858808755874634,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__655_444.mp4",
+      "label": 1,
+      "prob_fake": 0.8454337120056152,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__880.mp4",
+      "label": 0,
+      "prob_fake": 0.32897713780403137,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_09__walking_down_indoor_hall_disgust__6TEK3ZX0.mp4",
+      "label": 1,
+      "prob_fake": 0.7430915832519531,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__13_25__walking_down_street_outside_angry__IW9OFVMG.mp4",
+      "label": 1,
+      "prob_fake": 0.7064588069915771,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__055_147.mp4",
+      "label": 1,
+      "prob_fake": 0.09627022594213486,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_07__podium_speech_happy__KM6M2TBT.mp4",
+      "label": 1,
+      "prob_fake": 0.5362934470176697,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__02_07__hugging_happy__1JCLEEBQ.mp4",
+      "label": 1,
+      "prob_fake": 0.5934093594551086,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__351_346.mp4",
+      "label": 1,
+      "prob_fake": 0.6423078775405884,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__234_187.mp4",
+      "label": 1,
+      "prob_fake": 0.05163116008043289,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__528_510.mp4",
+      "label": 1,
+      "prob_fake": 0.8323708772659302,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__13_12__podium_speech_happy__2TM4IFSF.mp4",
+      "label": 1,
+      "prob_fake": 0.55557781457901,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__740.mp4",
+      "label": 0,
+      "prob_fake": 0.11497548967599869,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__072_037.mp4",
+      "label": 1,
+      "prob_fake": 0.8436468839645386,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__335_277.mp4",
+      "label": 1,
+      "prob_fake": 0.47476911544799805,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__629_618.mp4",
+      "label": 1,
+      "prob_fake": 0.42193567752838135,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__406.mp4",
+      "label": 0,
+      "prob_fake": 0.3831285238265991,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__836.mp4",
+      "label": 0,
+      "prob_fake": 0.29499348998069763,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__362_354.mp4",
+      "label": 1,
+      "prob_fake": 0.30401960015296936,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__864.mp4",
+      "label": 0,
+      "prob_fake": 0.6834343671798706,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__032_944.mp4",
+      "label": 1,
+      "prob_fake": 0.17789889872074127,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__653_601.mp4",
+      "label": 1,
+      "prob_fake": 0.8189703226089478,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__628_568.mp4",
+      "label": 1,
+      "prob_fake": 0.1782892793416977,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__976.mp4",
+      "label": 0,
+      "prob_fake": 0.5615923404693604,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__06_14__walking_and_outside_surprised__8U9ULZDT.mp4",
+      "label": 1,
+      "prob_fake": 0.6235483288764954,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__701_579.mp4",
+      "label": 1,
+      "prob_fake": 0.07349859923124313,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__226_491.mp4",
+      "label": 1,
+      "prob_fake": 0.33361873030662537,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__432_357.mp4",
+      "label": 1,
+      "prob_fake": 0.32209721207618713,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__650_625.mp4",
+      "label": 1,
+      "prob_fake": 0.866704523563385,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__264.mp4",
+      "label": 0,
+      "prob_fake": 0.5782606601715088,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__408.mp4",
+      "label": 0,
+      "prob_fake": 0.5973234176635742,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__25_21__walking_outside_cafe_disgusted__2R46UX3R.mp4",
+      "label": 1,
+      "prob_fake": 0.39132267236709595,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__916.mp4",
+      "label": 0,
+      "prob_fake": 0.5495351552963257,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_18__walking_outside_cafe_disgusted__22UBC0BS.mp4",
+      "label": 1,
+      "prob_fake": 0.8622199892997742,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__614.mp4",
+      "label": 0,
+      "prob_fake": 0.38224390149116516,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__509_525.mp4",
+      "label": 1,
+      "prob_fake": 0.7281416058540344,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__793_768.mp4",
+      "label": 1,
+      "prob_fake": 0.7499799132347107,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__149_152.mp4",
+      "label": 1,
+      "prob_fake": 0.4557015001773834,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__24_19__kitchen_pan__QD5K7BP2.mp4",
+      "label": 1,
+      "prob_fake": 0.7858805060386658,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__100_077.mp4",
+      "label": 1,
+      "prob_fake": 0.8977071046829224,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__472.mp4",
+      "label": 0,
+      "prob_fake": 0.48014035820961,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__377_333.mp4",
+      "label": 1,
+      "prob_fake": 0.8525751829147339,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__117_217.mp4",
+      "label": 1,
+      "prob_fake": 0.12118284404277802,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__451.mp4",
+      "label": 0,
+      "prob_fake": 0.7556256055831909,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__870_001.mp4",
+      "label": 1,
+      "prob_fake": 0.15815949440002441,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__011.mp4",
+      "label": 0,
+      "prob_fake": 0.16204148530960083,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__055_147.mp4",
+      "label": 1,
+      "prob_fake": 0.3604993522167206,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__01_27__walking_outside_cafe_disgusted__ZYCZ30C0.mp4",
+      "label": 1,
+      "prob_fake": 0.8945706486701965,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__379_158.mp4",
+      "label": 1,
+      "prob_fake": 0.7863527536392212,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__10_23__kitchen_pan__GYY4VANY.mp4",
+      "label": 1,
+      "prob_fake": 0.7582728266716003,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__768.mp4",
+      "label": 0,
+      "prob_fake": 0.5029879808425903,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__06_02__walking_down_indoor_hall_disgust__GH8TGTBS.mp4",
+      "label": 1,
+      "prob_fake": 0.5591723322868347,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__675_608.mp4",
+      "label": 1,
+      "prob_fake": 0.5542870759963989,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__565_589.mp4",
+      "label": 1,
+      "prob_fake": 0.9168974757194519,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__984.mp4",
+      "label": 0,
+      "prob_fake": 0.07355853170156479,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_20__walking_outside_cafe_disgusted__B0X1CGG2.mp4",
+      "label": 1,
+      "prob_fake": 0.45222026109695435,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__06_11__walking_and_outside_surprised__C8C4FW99.mp4",
+      "label": 1,
+      "prob_fake": 0.5330580472946167,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_14__talking_against_wall__ZC2KYASW.mp4",
+      "label": 1,
+      "prob_fake": 0.309124618768692,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__22_24__walking_down_street_outside_angry__7E3GY85F.mp4",
+      "label": 1,
+      "prob_fake": 0.8058505058288574,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__590_034.mp4",
+      "label": 1,
+      "prob_fake": 0.4141307771205902,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__747_854.mp4",
+      "label": 1,
+      "prob_fake": 0.03300080448389053,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__763.mp4",
+      "label": 0,
+      "prob_fake": 0.7974303364753723,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_25__walking_outside_cafe_disgusted__0UFFR3U1.mp4",
+      "label": 1,
+      "prob_fake": 0.8072667717933655,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__792_903.mp4",
+      "label": 1,
+      "prob_fake": 0.3563992381095886,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__108_052.mp4",
+      "label": 1,
+      "prob_fake": 0.11505401134490967,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_15__outside_talking_still_laughing__RK17XFJ9.mp4",
+      "label": 1,
+      "prob_fake": 0.603744387626648,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__215.mp4",
+      "label": 0,
+      "prob_fake": 0.4653836786746979,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__121_093.mp4",
+      "label": 1,
+      "prob_fake": 0.16284680366516113,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__105.mp4",
+      "label": 0,
+      "prob_fake": 0.4962940514087677,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__984_967.mp4",
+      "label": 1,
+      "prob_fake": 0.15701346099376678,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__243_156.mp4",
+      "label": 1,
+      "prob_fake": 0.5731139183044434,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__15_04__outside_talking_pan_laughing__7NW4Z6WZ.mp4",
+      "label": 1,
+      "prob_fake": 0.8109128475189209,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__446_667.mp4",
+      "label": 1,
+      "prob_fake": 0.5844766497612,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__790_014.mp4",
+      "label": 1,
+      "prob_fake": 0.5171639323234558,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__21_06__walking_down_indoor_hall_disgust__058I9NIZ.mp4",
+      "label": 1,
+      "prob_fake": 0.6757039427757263,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__896.mp4",
+      "label": 0,
+      "prob_fake": 0.8119009137153625,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__570_624.mp4",
+      "label": 1,
+      "prob_fake": 0.23567798733711243,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__834.mp4",
+      "label": 0,
+      "prob_fake": 0.6604558229446411,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__12_21__kitchen_pan__ME7E3R1D.mp4",
+      "label": 1,
+      "prob_fake": 0.619297444820404,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__974_953.mp4",
+      "label": 1,
+      "prob_fake": 0.8335567712783813,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__19_10__podium_speech_happy__FFXB67PI.mp4",
+      "label": 1,
+      "prob_fake": 0.5491527915000916,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__524.mp4",
+      "label": 0,
+      "prob_fake": 0.6592279672622681,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__439_441.mp4",
+      "label": 1,
+      "prob_fake": 0.9217703342437744,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__27_26__talking_against_wall__IE9N0ZI9.mp4",
+      "label": 1,
+      "prob_fake": 0.759822428226471,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__080_061.mp4",
+      "label": 1,
+      "prob_fake": 0.6143752336502075,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_14__podium_speech_happy__B014BKVO.mp4",
+      "label": 1,
+      "prob_fake": 0.6865727305412292,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__26_25__talking_against_wall__PQ41U3IJ.mp4",
+      "label": 1,
+      "prob_fake": 0.25784605741500854,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_12__outside_talking_pan_laughing__VD7BCF1U.mp4",
+      "label": 1,
+      "prob_fake": 0.9572436213493347,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__21_11__podium_speech_happy__T7DK03O1.mp4",
+      "label": 1,
+      "prob_fake": 0.6350350379943848,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__294.mp4",
+      "label": 0,
+      "prob_fake": 0.16919772326946259,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__701.mp4",
+      "label": 0,
+      "prob_fake": 0.06567712873220444,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__537.mp4",
+      "label": 0,
+      "prob_fake": 0.42007917165756226,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__13_07__exit_phone_room__RVQCPCJF.mp4",
+      "label": 1,
+      "prob_fake": 0.7258046269416809,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__437_360.mp4",
+      "label": 1,
+      "prob_fake": 0.7206842303276062,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__545_553.mp4",
+      "label": 1,
+      "prob_fake": 0.28054818511009216,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__024_073.mp4",
+      "label": 1,
+      "prob_fake": 0.3223172724246979,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__24_19__walking_outside_cafe_disgusted__NPZW2Z9L.mp4",
+      "label": 1,
+      "prob_fake": 0.6621890068054199,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__583_558.mp4",
+      "label": 1,
+      "prob_fake": 0.3233790695667267,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__025.mp4",
+      "label": 0,
+      "prob_fake": 0.7417859435081482,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__806_781.mp4",
+      "label": 1,
+      "prob_fake": 0.14101211726665497,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__23_19__walking_and_outside_surprised__H4SUVFTL.mp4",
+      "label": 1,
+      "prob_fake": 0.44484737515449524,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__092.mp4",
+      "label": 0,
+      "prob_fake": 0.7447836995124817,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__958.mp4",
+      "label": 0,
+      "prob_fake": 0.43666335940361023,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__633_529.mp4",
+      "label": 1,
+      "prob_fake": 0.5581874847412109,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__067_025.mp4",
+      "label": 1,
+      "prob_fake": 0.8648630976676941,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__11_03__walking_outside_cafe_disgusted__P08VGHTA.mp4",
+      "label": 1,
+      "prob_fake": 0.7882384657859802,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__695.mp4",
+      "label": 0,
+      "prob_fake": 0.11220709979534149,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__660.mp4",
+      "label": 0,
+      "prob_fake": 0.587960422039032,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__073_024.mp4",
+      "label": 1,
+      "prob_fake": 0.019060129299759865,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__807_273.mp4",
+      "label": 1,
+      "prob_fake": 0.4578711688518524,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__953_974.mp4",
+      "label": 1,
+      "prob_fake": 0.4090712368488312,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__430.mp4",
+      "label": 0,
+      "prob_fake": 0.027098949998617172,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__09_13__outside_talking_still_laughing__NDMHWBT1.mp4",
+      "label": 1,
+      "prob_fake": 0.36181217432022095,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__486_680.mp4",
+      "label": 1,
+      "prob_fake": 0.48073264956474304,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__03_04__outside_talking_pan_laughing__T04P6ELC.mp4",
+      "label": 1,
+      "prob_fake": 0.8424884080886841,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__552_851.mp4",
+      "label": 1,
+      "prob_fake": 0.570429801940918,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__567.mp4",
+      "label": 0,
+      "prob_fake": 0.33782896399497986,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__220_219.mp4",
+      "label": 1,
+      "prob_fake": 0.7285462021827698,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__405_393.mp4",
+      "label": 1,
+      "prob_fake": 0.714123547077179,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__254_261.mp4",
+      "label": 1,
+      "prob_fake": 0.6240953803062439,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__586.mp4",
+      "label": 0,
+      "prob_fake": 0.2906627655029297,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__939_115.mp4",
+      "label": 1,
+      "prob_fake": 0.8683151006698608,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__09_03__talking_angry_couch__RCETIXYL.mp4",
+      "label": 1,
+      "prob_fake": 0.8281786441802979,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__537_563.mp4",
+      "label": 1,
+      "prob_fake": 0.7347447872161865,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__703_604.mp4",
+      "label": 1,
+      "prob_fake": 0.8128522038459778,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__228.mp4",
+      "label": 0,
+      "prob_fake": 0.07865264266729355,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__039_058.mp4",
+      "label": 1,
+      "prob_fake": 0.6486455798149109,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__844_797.mp4",
+      "label": 1,
+      "prob_fake": 0.29875874519348145,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__676_776.mp4",
+      "label": 1,
+      "prob_fake": 0.7326664924621582,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__14_20__podium_speech_happy__R7SPX6OK.mp4",
+      "label": 1,
+      "prob_fake": 0.6323070526123047,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__990_008.mp4",
+      "label": 1,
+      "prob_fake": 0.5809749364852905,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__020_344.mp4",
+      "label": 1,
+      "prob_fake": 0.8163949251174927,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__225_151.mp4",
+      "label": 1,
+      "prob_fake": 0.1945670247077942,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__905.mp4",
+      "label": 0,
+      "prob_fake": 0.8092625141143799,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__07_02__hugging_happy__O4SXNLRL.mp4",
+      "label": 1,
+      "prob_fake": 0.4259605407714844,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__662.mp4",
+      "label": 0,
+      "prob_fake": 0.4980282783508301,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__887.mp4",
+      "label": 0,
+      "prob_fake": 0.5356775522232056,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__233_995.mp4",
+      "label": 1,
+      "prob_fake": 0.7181569933891296,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__791.mp4",
+      "label": 0,
+      "prob_fake": 0.19198891520500183,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__502.mp4",
+      "label": 0,
+      "prob_fake": 0.04005683586001396,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__391_406.mp4",
+      "label": 1,
+      "prob_fake": 0.7850261330604553,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_09__kitchen_pan__HG1S0KHA.mp4",
+      "label": 1,
+      "prob_fake": 0.8217883110046387,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__435.mp4",
+      "label": 0,
+      "prob_fake": 0.617645800113678,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__925_933.mp4",
+      "label": 1,
+      "prob_fake": 0.8522943258285522,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__683_607.mp4",
+      "label": 1,
+      "prob_fake": 0.8275315761566162,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__748_355.mp4",
+      "label": 1,
+      "prob_fake": 0.74479740858078,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__593_577.mp4",
+      "label": 1,
+      "prob_fake": 0.834465503692627,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__702_612.mp4",
+      "label": 1,
+      "prob_fake": 0.5075227618217468,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__257.mp4",
+      "label": 0,
+      "prob_fake": 0.28373876214027405,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__09_14__outside_talking_still_laughing__FRY0IZ4R.mp4",
+      "label": 1,
+      "prob_fake": 0.4536454379558563,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__610_692.mp4",
+      "label": 1,
+      "prob_fake": 0.7541615962982178,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__06_15__walking_down_indoor_hall_disgust__QRCD27P8.mp4",
+      "label": 1,
+      "prob_fake": 0.5017011165618896,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__700_813.mp4",
+      "label": 1,
+      "prob_fake": 0.8425158262252808,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__18_15__walking_down_street_outside_angry__V5VHLCOW.mp4",
+      "label": 1,
+      "prob_fake": 0.8458086848258972,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Face2Face__024_073.mp4",
+      "label": 1,
+      "prob_fake": 0.10631148517131805,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__849_771.mp4",
+      "label": 1,
+      "prob_fake": 0.770343005657196,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__383_353.mp4",
+      "label": 1,
+      "prob_fake": 0.2515695095062256,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__348_202.mp4",
+      "label": 1,
+      "prob_fake": 0.6759872436523438,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__DeepFakeDetection__20_15__podium_speech_happy__99NHTFBM.mp4",
+      "label": 1,
+      "prob_fake": 0.7516329884529114,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__916_783.mp4",
+      "label": 1,
+      "prob_fake": 0.6292041540145874,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__160_928.mp4",
+      "label": 1,
+      "prob_fake": 0.5695340633392334,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__073_024.mp4",
+      "label": 1,
+      "prob_fake": 0.09999500960111618,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__966.mp4",
+      "label": 0,
+      "prob_fake": 0.21414823830127716,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__060_088.mp4",
+      "label": 1,
+      "prob_fake": 0.9111102819442749,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__987_938.mp4",
+      "label": 1,
+      "prob_fake": 0.4520145058631897,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__327.mp4",
+      "label": 0,
+      "prob_fake": 0.2116577923297882,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__788_710.mp4",
+      "label": 1,
+      "prob_fake": 0.9120476245880127,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__304_300.mp4",
+      "label": 1,
+      "prob_fake": 0.3519737124443054,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__365.mp4",
+      "label": 0,
+      "prob_fake": 0.04517355561256409,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__100.mp4",
+      "label": 0,
+      "prob_fake": 0.36455610394477844,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__940_941.mp4",
+      "label": 1,
+      "prob_fake": 0.5101016759872437,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__original__769.mp4",
+      "label": 0,
+      "prob_fake": 0.034766487777233124,
+      "frame_source": "final"
+    },
+    {
+      "video": "FaceForensics_C23__Deepfakes__780_869.mp4",
+      "label": 1,
+      "prob_fake": 0.8160067200660706,
+      "frame_source": "final"
+    }
+  ]
+}

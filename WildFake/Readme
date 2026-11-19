@@ -1,0 +1,218 @@
+# WildDeepfake – Deepfake Detection
+
+Research Project: Improving Cross-Dataset Generalization of Deepfake Detection Using Frequency-Domain Feature Learning.
+
+This directory contains the WildDeepfake implementation of our deepfake detection research project.
+
+## 1. Project Overview
+
+The WildDeepfake implementation consists of three main components:
+
+1. **Xception RGB:** Extracts spatial and visual features from face images using the Xception architecture.
+2. **Frequency-Domain Feature Extraction:** Uses Fast Fourier Transform (FFT) and FrequencyCNN V2 to extract frequency-related features.
+3. **Feature Fusion:** Combines RGB and frequency-domain features to perform deepfake classification.
+
+The implementation also includes in-dataset evaluation and cross-dataset experiments using FaceForensics++.
+
+## 2. Project Structure
+
+```text
+WildDeepfake/
+│
+├── XCeption/
+│   ├── train_wilddeepfake.py
+│   ├── train_wilddeepfake_transfer.py
+│   └── cross_eval_wilddeepfake_to_ffpp.py
+│
+├── Frequency/
+│   └── train_wilddeepfake_frequency_v2.py
+│
+├── Fusion/
+│   └── train_wilddeepfake_fusion_v2.py
+│
+└── Result/
+```
+
+The training and evaluation scripts generate their respective output and result files. The `Result` directory is used to organise experiment results.
+
+## 3. Dataset Setup
+
+The WildDeepfake dataset is required to train and evaluate the models.
+
+### Dataset Preparation
+
+1. Obtain the WildDeepfake dataset from its original dataset source.
+2. Download and extract the dataset.
+3. Place the extracted dataset in the main WildDeepfake project directory.
+4. Verify that the dataset directory structure matches the paths configured in the training scripts.
+
+Example:
+
+```text
+WildDeepfake/
+│
+├── Dataset/
+│
+├── XCeption/
+├── Frequency/
+├── Fusion/
+└── Result/
+```
+
+**Note:** The dataset is not included in this GitHub repository. The dataset source/download link should be provided separately.
+
+## 4. Environment Setup
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/yash-ch17/Research_Paper.git
+```
+
+### Step 2: Open the Project Directory
+
+```bash
+cd Research_Paper/WildFake
+```
+
+Open the main WildDeepfake project directory in VS Code or your preferred IDE.
+
+### Step 3: Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Activate on Linux/macOS:
+
+```bash
+source venv/bin/activate
+```
+
+### Step 4: Install Dependencies
+
+If a `requirements.txt` file is available in the project root:
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+The project uses Python libraries such as:
+
+- PyTorch
+- Torchvision
+- timm
+- NumPy
+- Pandas
+- Scikit-learn
+- OpenCV
+- Pillow
+- Matplotlib
+- tqdm
+
+For NVIDIA GPU acceleration, install a PyTorch build compatible with your CUDA environment:
+
+https://pytorch.org/get-started/locally/
+
+## 5. Model Training
+
+Run the scripts from the main WildDeepfake project directory.
+
+### A. Xception RGB Model
+
+Train the WildDeepfake Xception model:
+
+```bash
+python XCeption/train_wilddeepfake.py
+```
+
+Run the transfer learning experiment:
+
+```bash
+python XCeption/train_wilddeepfake_transfer.py
+```
+
+### B. Frequency-Domain Model
+
+Train FrequencyCNN V2:
+
+```bash
+python Frequency/train_wilddeepfake_frequency_v2.py
+```
+
+This implementation applies FFT-based preprocessing and extracts frequency-domain features using FrequencyCNN V2.
+
+### C. Fusion Model
+
+After the required Xception and FrequencyCNN feature checkpoints are available, run:
+
+```bash
+python Fusion/train_wilddeepfake_fusion_v2.py
+```
+
+The Fusion V2 model combines the 2048-dimensional Xception RGB features and 256-dimensional frequency features into a 2304-dimensional representation.
+
+## 6. Evaluation
+
+The project includes in-dataset and cross-dataset evaluation experiments.
+
+### A. WildDeepfake In-Dataset Evaluation
+
+```bash
+python evaluate_wilddeepfake_test.py
+```
+
+### B. WildDeepfake Xception → FaceForensics++
+
+```bash
+python XCeption/cross_eval_wilddeepfake_to_ffpp.py
+```
+
+### C. WildDeepfake Fusion V2 → FaceForensics++
+
+```bash
+python eval_wilddeepfake_fusion_v2_to_ffpp.py
+```
+
+Make sure the required checkpoints, test manifests and dataset paths are correctly configured before running evaluation scripts.
+
+## 7. Results and Performance Metrics
+
+The experiments are evaluated using the following metrics:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Balanced Accuracy
+- ROC-AUC
+- Average Precision
+- Confusion Matrix
+
+The `Result` directory is used to organise the final experiment reports, evaluation metrics and generated result files.
+
+## 8. Important Notes
+
+- Run commands from the main WildDeepfake project directory.
+- Keep the extracted dataset inside the configured project location.
+- Verify dataset paths before training.
+- Train the required feature extraction models before running Fusion V2.
+- Ensure the correct checkpoints are available for evaluation.
+- Do not upload raw datasets, extracted frames or face crops to GitHub.
+- Large model checkpoints may need to be downloaded separately.
+- Training time depends on dataset size, GPU availability and system configuration.
+
+## 9. Research Objective
+
+The objective of this implementation is to investigate the effectiveness of combining spatial RGB features with frequency-domain representations for deepfake detection.
+
+The project evaluates individual feature extraction approaches, feature fusion and cross-dataset transfer between WildDeepfake and FaceForensics++.
+
+The experiments highlight the challenges of generalizing deepfake detection models across different datasets and manipulation techniques.

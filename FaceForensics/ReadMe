@@ -1,0 +1,262 @@
+# FaceForensics++ – Deepfake Detection
+
+**Research Project:** Improving Cross-Dataset Generalization of Deepfake Detection Using Frequency-Domain Feature Learning.
+
+This directory contains the FaceForensics++ implementation of our deepfake detection research project.
+
+## 1. Project Overview
+
+The project consists of three main components:
+
+1. **Xception RGB:** Extracts spatial and visual features from face images using the Xception architecture.
+2. **Frequency-Domain Feature Extraction:** Uses Fast Fourier Transform (FFT) and FrequencyCNN V2 to extract frequency-related features.
+3. **Feature Fusion:** Combines RGB and frequency-domain features for deepfake classification.
+
+The implementation also includes evaluation scripts for testing model performance and cross-dataset generalization.
+
+## 2. Project Structure
+
+```text
+FaceForensics++/
+│
+├── xception/
+│   ├── config.py
+│   ├── model.py
+│   ├── train.py
+│   ├── test.py
+│   ├── train_xception_final.py
+│   └── train_compression_finetune.py
+│
+├── frequency/
+│   └── train_frequency_v2.py
+│
+├── fusion/
+│   ├── train_fusion_improved.py
+│   ├── fine_tune_fusion_from_epoch2.py
+│   ├── diagnose_fusion_threshold.py
+│   └── calibrate_fusion_on_validation.py
+│
+├── evaluation/
+│   ├── evaluate_fusion_ffpp.py
+│   ├── evaluate_threshold.py
+│   └── predict_video.py
+│
+├── requirements.txt
+└── README.md
+```
+
+Training scripts automatically generate their respective output and result directories when executed.
+
+## 3. Dataset Download
+
+The project uses the FaceForensics++ C23 dataset.
+
+**Kaggle Dataset:**
+
+https://www.kaggle.com/datasets/xdxd003/ff-c23
+
+### Download and Extraction
+
+1. Open the Kaggle dataset link.
+2. Sign in to your Kaggle account.
+3. Download the dataset.
+4. Extract the downloaded archive.
+5. Place the extracted dataset inside the main `FaceForensics++` project directory.
+
+Example:
+
+```text
+FaceForensics++/
+│
+├── FaceForensics_C23/
+├── xception/
+├── frequency/
+├── fusion/
+├── requirements.txt
+└── README.md
+```
+
+Make sure the dataset folder name and internal directory structure match the paths configured in the Python scripts.
+
+**Note:** The dataset is not included in this repository. Users must download it separately from Kaggle.
+
+## 4. Environment Setup
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/yash-ch17/Research_Paper.git
+```
+
+### Step 2: Open the Project Directory
+
+```bash
+cd Research_Paper/FaceForensics
+```
+
+Open this main project directory in VS Code or your preferred IDE.
+
+### Step 3: Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Activate on Linux/macOS:
+
+```bash
+source venv/bin/activate
+```
+
+### Step 4: Install Dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+The project uses Python libraries such as:
+
+- PyTorch
+- Torchvision
+- timm
+- NumPy
+- Pandas
+- Scikit-learn
+- OpenCV
+- Pillow
+- Matplotlib
+- tqdm
+
+For NVIDIA GPU acceleration, install a PyTorch build compatible with your CUDA environment:
+
+https://pytorch.org/get-started/locally/
+
+## 5. Model Training
+
+Run the training scripts from the main project directory.
+
+### A. Xception RGB Model
+
+Primary training:
+
+```bash
+python xception/train.py
+```
+
+Final Xception training implementation:
+
+```bash
+python xception/train_xception_final.py
+```
+
+Compression fine-tuning:
+
+```bash
+python xception/train_compression_finetune.py
+```
+
+Testing:
+
+```bash
+python xception/test.py
+```
+
+### B. Frequency-Domain Model
+
+Train FrequencyCNN V2:
+
+```bash
+python frequency/train_frequency_v2.py
+```
+
+This implementation performs FFT-based frequency preprocessing and extracts frequency features through FrequencyCNN V2.
+
+### C. Fusion Model
+
+After the required Xception and FrequencyCNN feature checkpoints are available, run:
+
+```bash
+python fusion/train_fusion_improved.py
+```
+
+Additional fine-tuning experiment:
+
+```bash
+python fusion/fine_tune_fusion_from_epoch2.py
+```
+
+## 6. Evaluation
+
+### Fusion Evaluation
+
+```bash
+python evaluation/evaluate_fusion_ffpp.py
+```
+
+### Threshold Evaluation
+
+```bash
+python evaluation/evaluate_threshold.py
+```
+
+### Video-Level Prediction
+
+```bash
+python evaluation/predict_video.py
+```
+
+### Fusion Threshold Diagnostics
+
+```bash
+python fusion/diagnose_fusion_threshold.py
+```
+
+### Validation-Based Threshold Calibration
+
+```bash
+python fusion/calibrate_fusion_on_validation.py
+```
+
+Ensure that the required model checkpoints, manifests and dataset paths are correctly configured before executing evaluation scripts.
+
+## 7. Results and Performance Metrics
+
+The training and evaluation scripts generate their output and result directories automatically.
+
+The experiments use standard classification metrics:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Balanced Accuracy
+- ROC-AUC
+- Confusion Matrix
+
+Cross-dataset experiments evaluate how well trained models perform on data from a different dataset.
+
+## 8. Important Notes
+
+- Always execute commands from the main project directory.
+- Keep the extracted dataset inside the project root directory.
+- Verify dataset paths in the configuration files before training.
+- Train the required feature extraction models before running dependent fusion experiments.
+- Make sure checkpoint paths are correctly configured.
+- Do not upload raw datasets, extracted frames or face crops to GitHub.
+- Large model checkpoints may need to be downloaded separately.
+- Training time depends on dataset size, GPU availability and system configuration.
+
+## 9. Research Objective
+
+The main objective of this implementation is to investigate whether combining spatial RGB features with frequency-domain representations can improve deepfake detection.
+
+The project evaluates individual feature extraction branches, feature fusion and cross-dataset transfer between FaceForensics++ and WildDeepfake.
+
+Cross-dataset generalization remains a challenging problem, and the experiments analyse the strengths and limitations of the proposed approach.

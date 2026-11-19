@@ -1,6 +1,6 @@
 # FaceForensics++ – Deepfake Detection
 
-**Research Project:** Improving Cross-Dataset Generalization of Deepfake Detection Using Frequency-Domain Feature Learning.
+Research Project: Improving Cross-Dataset Generalization of Deepfake Detection Using Frequency-Domain Feature Learning.
 
 This directory contains the FaceForensics++ implementation of our deepfake detection research project.
 

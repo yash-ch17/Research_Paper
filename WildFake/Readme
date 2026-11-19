@@ -35,17 +35,31 @@ WildDeepfake/
 
 The training and evaluation scripts generate their respective output and result files. The `Result` directory is used to organise experiment results.
 
-## 3. Dataset Setup
+## 3. Dataset Download and Setup
 
-The WildDeepfake dataset is required to train and evaluate the models.
+The project uses the WildFake dataset for training and evaluation.
 
-### Dataset Preparation
+Dataset Source
 
-1. Obtain the WildDeepfake dataset from its original dataset source.
-2. Download and extract the dataset.
-3. Place the extracted dataset in the main WildDeepfake project directory.
-4. Verify that the dataset directory structure matches the paths configured in the training scripts.
+The dataset can be accessed through the following resources:
 
+GitHub Repository: https://github.com/hy-zpg/AIGC-Image-Detection-Dataset
+
+Direct Dataset Download (ModelScope): https://modelscope.cn/datasets/hy2628982280/WildFake/summary
+
+Download Instructions
+
+Open the GitHub repository or the direct ModelScope dataset link.
+
+Access the WildFake dataset.
+
+Download the dataset from ModelScope.
+
+Extract the downloaded dataset.
+
+Place the extracted dataset inside the main WildDeepfake project directory.
+
+Verify that the dataset folder structure matches the paths configured in the Python scripts.
 Example:
 
 ```text

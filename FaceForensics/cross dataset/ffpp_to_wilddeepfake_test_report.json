@@ -1,0 +1,53 @@
+{
+  "experiment": "Cross-dataset: FF++ Xception checkpoint evaluated on WildDeepfake",
+  "source_dataset": "FaceForensics++",
+  "target_dataset": "WildDeepfake",
+  "source_checkpoint": "D:\\faceforensics\\checkpoints_xception_compression\\best_compressed.pth",
+  "target_test_directory": "D:\\newdataset\\Dataset\\test",
+  "evaluation_unit": "individual extracted image (not 8-frame video-level)",
+  "training_or_finetuning_on_target": false,
+  "threshold_selection": "fixed 0.50 by default; not tuned on target test set",
+  "threshold": 0.5,
+  "image_size": 224,
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "model_checkpoint_metadata": {
+    "epoch": 4
+  },
+  "metrics": {
+    "accuracy": 0.4998522458628842,
+    "balanced_accuracy": 0.49782093848187886,
+    "fake_precision": 0.500969136722827,
+    "fake_recall": 0.9888169511477339,
+    "fake_f1": 0.6650173181593271,
+    "real_specificity": 0.006824925816023739,
+    "roc_auc": 0.5424302216524644,
+    "average_precision_fake": 0.5375670165304277,
+    "threshold": 0.5,
+    "confusion_matrix_labels_0_real_1_fake": [
+      [
+        23,
+        3347
+      ],
+      [
+        38,
+        3360
+      ]
+    ],
+    "n_test_images": 6768,
+    "n_real": 3370,
+    "n_fake": 3398
+  },
+  "elapsed_seconds": 110.43,
+  "note": "Image-level cross-dataset result. For a publication-grade thresholded comparison, use a threshold selected on held-out FF++ validation data if available; never tune the threshold on the WildDeepfake test set."
+}
